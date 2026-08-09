@@ -1,0 +1,127 @@
+.purchase-card {
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.purchase-card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #1a1a1a;
+  margin: 0 0 12px;
+}
+
+.purchase-card-price-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.purchase-card-price {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #3ecf4c;
+}
+
+.purchase-card-original-price {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.purchase-card-discount-badge {
+  background-color: #ffa726;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.purchase-card-offer {
+  color: #2f80ed;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 8px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.purchase-btn-buy,
+.purchase-btn-share {
+  width: 100%;
+  padding: 13px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+.purchase-btn-buy {
+  background-color: #3ecf4c;
+  color: white;
+  border: none;
+}
+
+.purchase-btn-buy:hover {
+  background-color: #35b843;
+}
+
+.purchase-btn-share {
+  background-color: white;
+  color: #3ecf4c;
+  border: 1px solid #3ecf4c;
+}
+
+.purchase-btn-share:hover {
+  background-color: #f2fbf3;
+}
+
+.purchase-card-includes,
+.purchase-card-language {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.purchase-card-includes-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a1a1a;
+  margin: 0 0 12px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.purchase-card-includes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 8px;
+}
+
+.purchase-card-includes-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+
+.purchase-card-includes-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: #666;
+}
+
+.purchase-card-includes-icon svg {
+  width: 100%;
+  height: 100%;
+}

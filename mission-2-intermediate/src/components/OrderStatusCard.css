@@ -1,0 +1,46 @@
+.status-card {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.status-illustration {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto 24px;
+}
+
+.status-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #1a1a1a;
+  margin: 0 0 12px;
+}
+
+.status-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+  margin: 0 auto 28px;
+  max-width: 420px;
+}
+
+.status-btn {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .status-card {
+    margin: 24px 16px;
+    padding: 36px 20px;
+  }
+}

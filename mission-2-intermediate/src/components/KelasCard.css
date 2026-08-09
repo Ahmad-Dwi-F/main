@@ -1,0 +1,213 @@
+.kelas-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.kelas-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background-color: #f4faf5;
+  border-bottom: 1px solid #eee;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  color: #555;
+}
+
+.kelas-status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.kelas-status-selesai {
+  background-color: #e6f7ea;
+  color: #2e9e44;
+}
+
+.kelas-status-berjalan {
+  background-color: #fff3e0;
+  color: #f5a623;
+}
+
+.kelas-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.kelas-card-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.kelas-card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.kelas-card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1a1a1a;
+  margin: 0 0 6px;
+}
+
+.kelas-card-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #777;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.kelas-card-instructor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.kelas-card-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.kelas-card-instructor-name {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.kelas-card-instructor-role {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+.kelas-card-meta {
+  display: flex;
+  gap: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #555;
+}
+
+.kelas-card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px;
+  background-color: #f4faf5;
+  border-top: 1px solid #eee;
+}
+
+.kelas-card-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  color: #444;
+}
+
+.kelas-progress-bar {
+  height: 6px;
+  border-radius: 4px;
+  background-color: #ffd9c7;
+  overflow: hidden;
+}
+
+.kelas-progress-fill {
+  height: 100%;
+  background-color: #e0522e;
+  border-radius: 4px;
+}
+
+.kelas-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kelas-btn-primary,
+.kelas-btn-outline {
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.kelas-btn-primary {
+  background-color: #3ecf4c;
+  color: white;
+}
+
+.kelas-btn-primary:hover {
+  background-color: #35b843;
+}
+
+.kelas-btn-outline {
+  background-color: white;
+  color: #3ecf4c;
+  border: 1px solid #3ecf4c;
+}
+
+@media (min-width: 768px) {
+  .kelas-card-body {
+    flex-direction: row;
+  }
+
+  .kelas-card-image {
+    width: 220px;
+    height: 140px;
+    flex-shrink: 0;
+  }
+
+  .kelas-card-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .kelas-card-progress {
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    flex: 1;
+  }
+
+  .kelas-progress-bar {
+    flex: 1;
+    max-width: 300px;
+  }
+
+  .kelas-card-actions {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .kelas-btn-primary,
+  .kelas-btn-outline {
+    width: auto;
+    padding: 12px 24px;
+  }
+}
