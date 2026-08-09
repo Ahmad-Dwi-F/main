@@ -1,0 +1,41 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.star-rating-icon {
+  color: #ddd;
+}
+
+.star-rating-icon.filled {
+  color: #ffb400;
+}
+
+.star-rating-value {
+  font-weight: 600;
+  margin-left: 3px;
+  color: #1a1a1a;
+}
+
+.star-rating-count {
+  color: #999;
+}
+
+.star-rating-sm .star-rating-icon {
+  font-size: 12px;
+}
+.star-rating-md .star-rating-icon {
+  font-size: 14px;
+}
+.star-rating-lg .star-rating-icon {
+  font-size: 16px;
+}
+
+.star-rating-on-dark .star-rating-value {
+  color: white;
+}
+.star-rating-on-dark .star-rating-count {
+  color: #ddd;
+}

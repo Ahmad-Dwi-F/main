@@ -1,0 +1,123 @@
+.sertifikat-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdf9f2;
+}
+
+.sertifikat-breadcrumb {
+  padding: 20px 24px 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.sertifikat-breadcrumb a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.sertifikat-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.sertifikat-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  margin: 20px 24px 40px;
+  padding: 20px;
+  flex: 1;
+}
+
+.sertifikat-img-wrap {
+  background-color: #eefcf0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.sertifikat-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sertifikat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.sertifikat-title {
+  font-size: 20px;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.sertifikat-desc {
+  color: #6b7280;
+  font-family: "DM sans", sans-serif;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.sertifikat-instructor-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sertifikat-instructor-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sertifikat-instructor-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.sertifikat-instructor-role {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.sertifikat-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sertifikat-rating-value {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.sertifikat-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background-color: white;
+  border: 1.5px solid #3ecf4c;
+  border-radius: 10px;
+  color: #3ecf4c;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .sertifikat-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

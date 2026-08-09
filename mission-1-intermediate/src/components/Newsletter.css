@@ -1,0 +1,117 @@
+.newsletter {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../assets/footer-bgn.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  height: 400px;
+  border-radius: 10px;
+  margin: 28px 20px;
+  padding: 64px 20px;
+}
+
+.newsletter-overlay {
+  display: flex;
+  justify-content: center;
+  padding: 48px 20px;
+}
+
+.newsletter-content {
+  max-width: 500px;
+  text-align: center;
+  color: white;
+}
+
+.newsletter-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #ddd;
+  margin-bottom: 12px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.newsletter-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.newsletter-desc {
+  font-size: 14px;
+  color: #eee;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 10px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.newsletter-input {
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  min-width: 135px;
+  min-height: 40px;
+}
+
+.newsletter-button {
+  background-color: #ffa726;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.newsletter-button:hover {
+  background-color: #fb8c00;
+}
+
+@media (min-width: 768px) {
+  .newsletter {
+    margin: 28px auto;
+    display: flex;
+    align-self: center;
+  }
+  .newsletter-content {
+    max-width: 700px;
+  }
+
+  .newsletter-title {
+    font-size: 32px;
+  }
+
+  .newsletter-form {
+    flex-direction: row;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .newsletter-input {
+    flex: 1;
+  }
+
+  .newsletter-button {
+    flex-shrink: 0;
+    padding: 12px 24px;
+  }
+}

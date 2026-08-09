@@ -1,0 +1,109 @@
+.modul-list {
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modul-group {
+  border-bottom: 1px solid #eee;
+}
+
+.modul-group:last-child {
+  border-bottom: none;
+}
+
+.modul-group-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  border: none;
+  padding: 14px 16px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.modul-group-chevron {
+  transition: transform 0.2s ease;
+  color: #999;
+}
+
+.modul-group-chevron.open {
+  transform: rotate(180deg);
+}
+
+.modul-group-items {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.modul-group-items.open {
+  max-height: 2000px;
+}
+
+.modul-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.modul-item.current {
+  background-color: #f2fbf3;
+}
+
+.modul-item-check {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid #ddd;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.modul-item-check.done {
+  background-color: #3ecf4c;
+  border-color: #3ecf4c;
+}
+
+.modul-item-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+}
+
+.modul-item-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #1a1a1a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modul-item-duration {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #999;
+}
