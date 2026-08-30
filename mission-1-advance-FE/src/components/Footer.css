@@ -1,0 +1,156 @@
+.footer {
+  padding: 48px 24px 24px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-logo {
+  height: 28px;
+  width: auto;
+}
+.footer-tagline {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a1a1a;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-address,
+.footer-phone {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #555;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column {
+  border-bottom: 1px solid #eee;
+}
+
+.footer-column-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 16px 0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-chevron {
+  transition: transform 0.2s ease;
+  font-size: 18px;
+}
+
+.footer-chevron.open {
+  transform: rotate(90deg);
+}
+
+.footer-column-list {
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.footer-column-list.open {
+  max-height: 300px;
+  padding-bottom: 12px;
+}
+
+.footer-column-list li {
+  padding: 6px 0;
+}
+
+.footer-column-list a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer-divider {
+  margin: 32px 0 16px;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: #888;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    gap: 64px;
+  }
+
+  .footer-column {
+    border-bottom: none;
+  }
+
+  .footer-column-title {
+    cursor: default;
+    padding: 0 0 16px;
+    pointer-events: none;
+  }
+
+  .footer-chevron {
+    display: none;
+  }
+
+  .footer-column-list {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,54 @@
+.bayar-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.metode-section {
+  font-family: "Poppins", sans-serif;
+}
+
+.bayar-btn-ganti {
+  width: 100%;
+  padding: 13px;
+  background-color: white;
+  color: #3ecf4c;
+  border: 1px solid #3ecf4c;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+}
+
+.bayar-btn-bayar {
+  width: 100%;
+  padding: 13px;
+  background-color: #3ecf4c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+}
+
+.bayar-btn-bayar:hover {
+  background-color: #35b843;
+}
+
+@media (min-width: 768px) {
+  .bayar-buttons {
+    flex-direction: row;
+  }
+
+  .bayar-btn-ganti {
+    flex: 1;
+  }
+
+  .bayar-btn-bayar {
+    flex: 2;
+  }
+}
