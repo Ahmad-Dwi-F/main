@@ -1,0 +1,198 @@
+.pesanan-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 0;
+}
+
+.pesanan-header h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.pesanan-header p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #777;
+  margin-top: 6px;
+}
+
+.pesanan-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pesanan-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.pesanan-sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #999;
+  text-decoration: none;
+}
+
+.pesanan-sidebar-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.pesanan-sidebar-item-active {
+  background-color: #fff3d6;
+  color: #f5a623;
+}
+
+.pesanan-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.pesanan-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.pesanan-tabs {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  border-bottom: 1px solid #eee;
+}
+
+.pesanan-tab {
+  background: none;
+  border: none;
+  padding: 10px 4px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #999;
+  white-space: nowrap;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.pesanan-tab.active {
+  color: #e0522e;
+  border-bottom-color: #e0522e;
+}
+
+.pesanan-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pesanan-search {
+  flex: 1;
+  min-width: 160px;
+}
+
+.pesanan-search input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+
+.pesanan-sort {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  background-color: white;
+}
+
+.pesanan-empty {
+  text-align: center;
+  padding: 40px 0;
+  color: #999;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.pesanan-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pesanan-pagination button {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background-color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.pesanan-pagination button.active {
+  background-color: #f5a623;
+  color: white;
+  border-color: #f5a623;
+}
+
+.pesanan-pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (min-width: 768px) {
+  .pesanan-header {
+    padding: 32px 32px 0;
+  }
+
+  .pesanan-layout {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px 32px;
+  }
+
+  .pesanan-sidebar {
+    width: 240px;
+    flex-shrink: 0;
+  }
+
+  .pesanan-toolbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pesanan-tabs {
+    border-bottom: none;
+    overflow-x: visible;
+  }
+
+  .pesanan-filters {
+    flex-wrap: nowrap;
+  }
+}

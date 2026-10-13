@@ -1,0 +1,146 @@
+.filter-sidebar {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.filter-header h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+.filter-reset {
+  background: none;
+  border: none;
+  color: #ff5c39;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.filter-group {
+  border-top: 1px solid #eee;
+  padding: 8px 0;
+}
+
+.filter-group-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 8px 0;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.filter-group-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.filter-icon-check {
+  background-color: #3ecf4c;
+  color: white;
+  font-size: 11px;
+}
+
+.filter-icon-duration {
+  border-radius: 50%;
+  border: 2px solid #3ecf4c;
+}
+
+.filter-chevron {
+  transition: transform 0.2s ease;
+  font-size: 18px;
+  color: #999;
+}
+
+.filter-chevron.open {
+  transform: rotate(90deg);
+}
+
+.filter-group-list {
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 4px;
+}
+
+.filter-group-list.open {
+  max-height: 300px;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+
+.filter-group-list li {
+  padding: 6px 0;
+}
+
+.filter-checkbox-label,
+.filter-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #444;
+  cursor: pointer;
+}
+
+.filter-checkbox-label input,
+.filter-radio-label input {
+  accent-color: #3ecf4c;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .filter-sidebar {
+    max-width: 240px;
+  }
+  .filter-group-list {
+    max-height: none !important;
+    overflow: visible;
+    padding-top: 4px;
+    padding-bottom: 8px;
+  }
+
+  .filter-group-title {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .filter-chevron {
+    display: none;
+  }
+}

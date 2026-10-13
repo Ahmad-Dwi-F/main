@@ -1,0 +1,178 @@
+.favorite-list {
+  width: 100%;
+  max-width: 1200px;
+  margin: 24px 20px 0;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.favorite-list-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.favorite-list-subtitle {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  color: #777;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.favorite-list-empty {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: #999;
+  margin-top: 16px;
+  padding: 24px;
+  text-align: center;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+}
+
+.favorite-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.favorite-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.favorite-item-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.favorite-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.favorite-item-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.favorite-item-price {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #3ecf4c;
+  margin: 0;
+}
+
+.favorite-item-note-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 8px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.favorite-item-note {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: #777;
+  font-style: italic;
+  margin: 0;
+  flex: 1;
+}
+
+.favorite-item-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.favorite-item-edit {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.favorite-item-input {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.favorite-item-input:focus {
+  border-color: #3ecf4c;
+}
+
+.favorite-item-edit-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.favorite-item-btn {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.favorite-item-btn.edit {
+  background-color: white;
+  color: #3ecf4c;
+  border: 1px solid #3ecf4c;
+}
+
+.favorite-item-btn.delete {
+  background-color: white;
+  color: #ff5c39;
+  border: 1px solid #ff5c39;
+}
+
+.favorite-item-btn.save {
+  background-color: #3ecf4c;
+  color: white;
+}
+
+.favorite-item-btn.cancel {
+  background-color: white;
+  color: #777;
+  border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+  .favorite-list {
+    padding: 24px 32px;
+    border: 1px solid rgb(165, 165, 165);
+  }
+
+  .favorite-list-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}

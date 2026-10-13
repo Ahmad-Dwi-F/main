@@ -1,0 +1,1037 @@
+.belajar-page {
+  min-height: 100vh;
+  background-color: #faf7f2;
+}
+
+.belajar-not-found {
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.belajar-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 20px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.belajar-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.belajar-back {
+  color: #1a1a1a;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.belajar-course-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #1a1a1a;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.belajar-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.belajar-progress-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #3ecf4c;
+}
+
+.belajar-progress-pill {
+  width: 60px;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #ffe0c2;
+  overflow: hidden;
+  display: none;
+}
+
+.belajar-progress-pill-fill {
+  height: 100%;
+  background-color: #ffa726;
+  border-radius: 4px;
+}
+
+.belajar-progress-chevron {
+  transition: transform 0.2s ease;
+  color: #999;
+}
+
+.belajar-progress-chevron.open {
+  transform: rotate(180deg);
+}
+
+.belajar-progress-complete {
+  border: 1.5px solid #3ecf4c;
+  border-radius: 20px;
+  padding: 6px 14px;
+}
+
+.belajar-progress-trophy {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.belajar-progress-complete-label {
+  color: #3ecf4c;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.belajar-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.belajar-popover {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: 260px;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  z-index: 200;
+}
+
+.belajar-popover-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+}
+
+.belajar-popover-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #777;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+.belajar-popover-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ddd;
+  color: #999;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  cursor: not-allowed;
+}
+
+.belajar-popover-btn:not(:disabled) {
+  background-color: #3ecf4c;
+  color: white;
+  cursor: pointer;
+}
+
+.belajar-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.belajar-left {
+  padding: 20px;
+}
+
+.belajar-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #2b2b2b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.belajar-play-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.belajar-content-info {
+  margin-top: 20px;
+}
+
+.belajar-content-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+}
+
+.belajar-content-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+.belajar-instructor-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.belajar-instructor-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.belajar-instructor-name {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.belajar-instructor-role {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+.belajar-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.belajar-rating-value {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #777;
+}
+
+.belajar-navbar {
+  display: flex;
+  align-items: stretch;
+  gap: 1px;
+  background-color: #35b843;
+}
+
+.belajar-nav-btn {
+  flex: 1;
+  padding: 16px 20px;
+  border: none;
+  background-color: #3ecf4c;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.belajar-nav-next {
+  text-align: right;
+}
+
+.belajar-nav-btn:disabled {
+  background-color: #a8e0af;
+  cursor: not-allowed;
+}
+
+.belajar-sidebar {
+  padding: 0 20px 20px;
+}
+
+.belajar-review-bar {
+  width: 100%;
+  margin-top: 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffa726;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.belajar-profile-dropdown {
+  position: relative;
+}
+
+.belajar-avatar-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+}
+
+.belajar-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  min-width: 180px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: all 0.2s ease;
+  z-index: 200;
+}
+
+.belajar-dropdown-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.belajar-dropdown-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 14px 18px;
+  border: none;
+  background: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: #444;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.belajar-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.belajar-dropdown-item:hover {
+  background-color: #f7f7f7;
+}
+
+.belajar-dropdown-logout {
+  color: #e0522e;
+  font-weight: 600;
+}
+
+.belajar-topbar {
+  position: relative;
+}
+
+.belajar-profile-dropdown {
+  display: none;
+}
+
+.belajar-hamburger {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #1a1a1a;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 8px;
+}
+
+.belajar-menu-mobile {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.belajar-menu-mobile.open {
+  max-height: 400px;
+  padding: 8px 20px 20px;
+}
+
+.belajar-mobile-link {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 16px 0;
+  border: none;
+  border-bottom: 1px solid #eee;
+  background: none;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.belajar-mobile-logout {
+  color: #e0522e;
+  border-bottom: none;
+}
+
+.belajar-rule-container {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.belajar-rule-banner {
+  width: 100%;
+  background-color: #e8f7fa;
+  overflow: hidden;
+}
+
+.belajar-rule-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.belajar-rule-content {
+  padding: 24px;
+}
+
+.belajar-rule-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #1a1a1a;
+  margin: 0 0 12px;
+}
+
+.belajar-rule-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+.belajar-rule-meta {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+.belajar-rule-meta p {
+  margin: 4px 0;
+}
+
+.belajar-rule-subtext {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.belajar-rule-btn {
+  padding: 12px 28px;
+  background-color: #3ecf4c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.belajar-rule-btn:hover {
+  background-color: #35b843;
+}
+
+.belajar-quiz-active-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.belajar-quiz-list-panel {
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.belajar-quiz-list-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1a1a1a;
+  margin: 0 0 16px;
+}
+
+.belajar-quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.belajar-quiz-num-btn {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a1a1a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.belajar-quiz-num-btn.active {
+  border-color: #ffa726;
+  box-shadow: 0 0 0 1px #ffa726;
+}
+
+.soal-corner-triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 12px solid #ffa726;
+  border-left: 12px solid transparent;
+}
+
+.belajar-quiz-alert-box {
+  background-color: #eaf8ff;
+  border: 1px solid #bce4ff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #0275d8;
+  line-height: 1.5;
+}
+
+.belajar-quiz-question-panel {
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.belajar-quiz-q-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1a1a1a;
+  margin: 0 0 12px;
+}
+
+.belajar-quiz-q-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.belajar-quiz-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.belajar-quiz-option-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 16px 20px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.belajar-quiz-option-btn.selected {
+  border-color: #3ecf4c;
+  background-color: #f6fff7;
+}
+
+.belajar-quiz-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.belajar-quiz-radio.selected {
+  border-color: #3ecf4c;
+}
+
+.belajar-quiz-radio-inner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3ecf4c;
+}
+
+.belajar-quiz-option-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+.belajar-quiz-option-btn.selected .belajar-quiz-option-text {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.belajar-quiz-nav-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.belajar-quiz-nav-prev {
+  flex: 1;
+  padding: 12px 24px;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #475569;
+  cursor: pointer;
+}
+
+.belajar-quiz-nav-prev:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.belajar-quiz-nav-next {
+  flex: 1;
+  padding: 12px 24px;
+  background-color: #3ecf4c;
+  border: none;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.belajar-quiz-nav-next:disabled {
+  background-color: #a8e0af;
+  cursor: not-allowed;
+}
+
+.belajar-quiz-nav-finish {
+  background-color: #ffa726;
+}
+
+.belajar-quiz-nav-finish:hover {
+  background-color: #fb8c00;
+}
+
+.belajar-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.belajar-modal-card {
+  background-color: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  animation: modalFadeIn 0.2s ease-out forwards;
+}
+
+.belajar-modal-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 145px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.belajar-modal-img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+}
+
+.belajar-modal-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+}
+
+.belajar-modal-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+.belajar-modal-actions {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 12px;
+}
+
+.belajar-modal-btn-cancel {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #3ecf4c;
+  color: #3ecf4c;
+  border-radius: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.belajar-modal-btn-cancel:hover {
+  background-color: #f6fff7;
+}
+
+.belajar-modal-btn-confirm {
+  width: 100%;
+  padding: 12px;
+  background-color: #3ecf4c;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.belajar-modal-btn-confirm:hover {
+  background-color: #35b843;
+}
+
+.belajar-result-date-label {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 16px;
+}
+.belajar-result-date-value {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.belajar-result-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.belajar-result-stat,
+.belajar-result-stat-nilai {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+.belajar-result-stat-nilai.passed {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+}
+.belajar-result-stat-nilai.failed {
+  background: #f97316;
+  color: #fff;
+  border: none;
+}
+.belajar-result-stat-label {
+  display: block;
+  font-size: 13px;
+  opacity: 0.85;
+  margin-bottom: 4px;
+}
+.belajar-result-stat-value {
+  font-size: 24px;
+  font-weight: 700;
+}
+.belajar-result-stat-value.correct {
+  color: #16a34a;
+}
+.belajar-result-stat-value.wrong {
+  color: #dc2626;
+}
+.belajar-result-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+.belajar-result-desc {
+  color: #6b7280;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+.belajar-result-retry-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid #22c55e;
+  color: #22c55e;
+  background: transparent;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+}
+.belajar-result-retry-btn:hover {
+  background: #f0fdf4;
+}
+
+.belajar-rating-stars-input {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.belajar-rating-star-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1;
+}
+.belajar-rating-star {
+  font-size: 32px;
+  color: #ddd;
+  transition: color 0.15s ease;
+}
+.belajar-rating-star.filled {
+  color: #ffa726;
+}
+.belajar-rating-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #1a1a1a;
+  resize: vertical;
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+.belajar-rating-textarea:focus {
+  outline: none;
+  border-color: #3ecf4c;
+}
+.belajar-modal-btn-confirm:disabled {
+  background-color: #a8e0af;
+  cursor: not-allowed;
+}
+
+.belajar-rangkuman-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background-color: white;
+  border: 1.5px solid #3ecf4c;
+  border-radius: 10px;
+  color: #3ecf4c;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.belajar-rangkuman-download-btn:hover {
+  background-color: #f6fff7;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 768px) {
+  .belajar-modal-actions {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .belajar-modal-btn-cancel,
+  .belajar-modal-btn-confirm {
+    flex: 1;
+  }
+
+  .belajar-quiz-active-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .belajar-quiz-list-panel {
+    width: 260px;
+    flex-shrink: 0;
+  }
+
+  .belajar-quiz-question-panel {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .belajar-topbar {
+    padding: 16px 32px;
+  }
+
+  .belajar-course-title {
+    font-size: 17px;
+    max-width: 500px;
+  }
+
+  .belajar-progress-pill {
+    display: block;
+  }
+
+  .belajar-body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 32px;
+    gap: 24px;
+  }
+
+  .belajar-left {
+    flex: 1;
+    min-width: 0;
+    padding: 0;
+    order: 0;
+  }
+
+  .belajar-sidebar {
+    width: 380px;
+    flex-shrink: 0;
+    padding: 0;
+    order: 1;
+  }
+
+  .belajar-navbar {
+    width: 100%;
+    order: 2;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .belajar-hamburger {
+    display: none;
+  }
+  .belajar-profile-dropdown {
+    display: block;
+  }
+}

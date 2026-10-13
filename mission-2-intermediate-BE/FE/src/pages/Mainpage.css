@@ -1,0 +1,23 @@
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.course-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 24px 20px;
+  padding: 0px 20px;
+}
+
+@media (min-width: 768px) {
+  .course-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0px 32px;
+  }
+}
