@@ -1,0 +1,68 @@
+.hero-produk {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../assets/bgn-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  height: 400px;
+  border-radius: 10px;
+  margin: 28px 20px;
+  padding: 64px 20px 92px 20px;
+}
+
+.hero-content-produk {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0px 20px;
+  gap: 14px;
+  max-width: 920px;
+  min-height: 215px;
+  color: white;
+}
+
+.hero-content-produk h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  font-style: semibold;
+  margin: 0;
+  padding: 0;
+}
+.hero-content-produk p {
+  font-family: "DM sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: medium;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .hero-produk {
+    margin: 64px auto;
+    padding-top: 80px;
+    padding-right: 140px;
+    padding-bottom: 64px;
+    padding-left: 140px;
+  }
+  .hero-content-produk h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+  }
+  .hero-content-produk p {
+    font-family: "DM sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+}

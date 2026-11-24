@@ -1,0 +1,51 @@
+.account-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.account-sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #999;
+  text-decoration: none;
+}
+
+.account-sidebar-item-active {
+  background-color: #fff3d6;
+  color: #f5a623;
+}
+
+.account-sidebar-item-active.account-sidebar-item-tutor-active {
+  background: #ffbe6e;
+  background: linear-gradient(
+    225deg,
+    rgba(255, 190, 110, 1) 0%,
+    rgba(255, 255, 196, 1) 86%
+  );
+  color: #7c4700;
+}
+
+.account-sidebar-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .account-sidebar {
+    width: 240px;
+    flex-shrink: 0;
+  }
+}

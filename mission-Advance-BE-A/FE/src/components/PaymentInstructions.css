@@ -1,0 +1,55 @@
+.instruction-group {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.instruction-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 14px 16px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.instruction-chevron {
+  transition: transform 0.2s ease;
+  color: #999;
+}
+
+.instruction-chevron.open {
+  transform: rotate(180deg);
+}
+
+.instruction-steps {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.instruction-steps.open {
+  max-height: 1000px;
+}
+
+.instruction-steps ol {
+  margin: 0;
+  padding: 4px 40px 16px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.instruction-steps li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+}
